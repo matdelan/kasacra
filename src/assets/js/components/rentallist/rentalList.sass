@@ -1,0 +1,24 @@
+@import '../../sass/style'
+
+@keyframes openList
+    0%
+        opacity: 0
+    100%
+        opacity: 1
+
+.rentalList    
+    position: relative
+    border-radius: 20px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    align-items: center
+    padding: 30px
+    width: 85%
+    animation: openList 800ms forwards
+    margin: 40px 0
+    +mq(md)
+        justify-content: space-between
+        background-color: #F6F6F6
+    & li
+        list-style-type: none

@@ -1,0 +1,31 @@
+@import '../../sass/style'
+
+.banner
+    width: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+    &__img
+        height: 120px
+        +mq(md)
+            height: 220px
+        width: 90%
+        object-fit: cover
+        position: relative
+        z-index: 1
+        border-radius: 20px
+        &-dark
+            filter: brightness(0.35)
+    &__text
+        color: white
+        z-index: 10
+        font-weight: 700
+        font-size: 1em
+        position: absolute
+        width: 70%
+        +mq(md)
+            font-size: 1.5em
+            text-align: center
+            font-weight: 500
+
+        
