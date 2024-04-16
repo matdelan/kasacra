@@ -1,5 +1,5 @@
 import './PageRental.sass'
-import { useLoaderData, useParams, useAsyncValue, Await } from 'react-router-dom'
+import { useLoaderData, useParams, Await } from 'react-router-dom'
 import { Suspense } from 'react'
 import Collapse from '../../components/collapse/Collapse'
 import IconStar from '../../components/iconStar/IconStar'

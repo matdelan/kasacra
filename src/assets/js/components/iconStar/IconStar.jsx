@@ -2,7 +2,6 @@ import './IconStar.sass'
 
 export default function IconStar({rating}) {
     const maxStar = 5
-    const emptyStar = maxStar - rating
 
     const stars = []
     let i = 0

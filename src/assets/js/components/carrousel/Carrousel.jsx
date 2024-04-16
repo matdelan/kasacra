@@ -8,14 +8,14 @@ export default function Carrousel({imgLinks}) {
     const handleClickAfter = () => {
         let nb = currentImg + 1
 
-        if(nb == (maxImg+1))
+        if(nb === (maxImg+1))
              nb = 1
         setCurrentImg(nb)
     }
     const handleClickBefore = () => {
         let nb = currentImg - 1
 
-        if(nb == 0)
+        if(nb === 0)
              nb = maxImg
         setCurrentImg(nb)
     }
@@ -26,7 +26,7 @@ export default function Carrousel({imgLinks}) {
         case 1:
             return( <>
                 <div className='carrousel'>
-                    <img className='carrousel__img' src={imgLinks[0]} alt="Rental image"/>
+                    <img className='carrousel__img' src={imgLinks[0]} alt="Rental"/>
                 </div>
             </>)
         default:
@@ -34,7 +34,7 @@ export default function Carrousel({imgLinks}) {
                 <div className='carrousel'>
                     <i onClick={handleClickBefore} className='fa-solid fa-chevron-left carrousel__inImg carrousel__arrow-left'></i>
                     <p className='carrousel__inImg carrousel__count'>{currentImg}/{maxImg}</p>
-                    <img className='carrousel__img' src={imgLinks[currentImg -1]} alt="Rental image"/>
+                    <img className='carrousel__img' src={imgLinks[currentImg -1]} alt="Rental"/>
                     <i onClick={handleClickAfter} className='fa-solid fa-chevron-right carrousel__inImg carrousel__arrow-right'></i>
                 </div>
             </>
